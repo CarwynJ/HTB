@@ -1,0 +1,1 @@
+# Nmap 7.93 scan initiated Fri Sep 23 20:57:06 2022 as: nmap -v -sC -sV -oN nmap/initial 10.129.181.249

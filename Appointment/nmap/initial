@@ -1,0 +1,1 @@
+# Nmap 7.93 scan initiated Sun Sep 25 17:06:12 2022 as: nmap -sV -sC -oN /home/zeus/HTB/Appointment/nmap/initial 10.129.147.128

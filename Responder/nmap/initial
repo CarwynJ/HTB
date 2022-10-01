@@ -1,0 +1,11 @@
+# Nmap 7.93 scan initiated Sun Sep 25 17:22:38 2022 as: nmap -sV -sC -oN nmap/initial 10.129.228.57
+Nmap scan report for 10.129.228.57
+Host is up (0.30s latency).
+Not shown: 999 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.52 ((Win64) OpenSSL/1.1.1m PHP/8.1.1)
+|_http-server-header: Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/8.1.1
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Sep 25 17:23:21 2022 -- 1 IP address (1 host up) scanned in 43.30 seconds
