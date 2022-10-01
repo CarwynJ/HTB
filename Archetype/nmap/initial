@@ -1,1 +1,74 @@
-# Nmap 7.93 scan initiated Fri Sep 30 18:06:47 2022 as: nmap -sV -sC -oN nmap/initial -p- 10.129.190.66
+# Nmap 7.93 scan initiated Fri Sep 30 19:18:48 2022 as: nmap -sV -sC -oN nmap/initial -A 10.129.190.66
+Nmap scan report for 10.129.190.66
+Host is up (0.27s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT     STATE SERVICE      VERSION
+135/tcp  open  msrpc        Microsoft Windows RPC
+139/tcp  open  netbios-ssn  Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds Windows Server 2019 Standard 17763 microsoft-ds
+1433/tcp open  ms-sql-s     Microsoft SQL Server 2017 14.00.1000.00; RTM
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+|_ssl-date: 2022-10-01T02:19:47+00:00; 0s from scanner time.
+| ssl-cert: OpenSSL required to parse certificate.
+| -----BEGIN CERTIFICATE-----
+| MIIDADCCAeigAwIBAgIQFgCnnIuKlL5JRYTNsMcUFTANBgkqhkiG9w0BAQsFADA7
+| MTkwNwYDVQQDHjAAUwBTAEwAXwBTAGUAbABmAF8AUwBpAGcAbgBlAGQAXwBGAGEA
+| bABsAGIAYQBjAGswIBcNMjIxMDAxMDAyODI5WhgPMjA1MjEwMDEwMDI4MjlaMDsx
+| OTA3BgNVBAMeMABTAFMATABfAFMAZQBsAGYAXwBTAGkAZwBuAGUAZABfAEYAYQBs
+| AGwAYgBhAGMAazCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKgooTzH
+| Dn55NXnPXyol7KPFIomFvdOx/klxon0OpOWAbWqlMcj2H9KiWgBQTotcdEmnIE1C
+| tOZroex4ebPD8ausKV+FsmI4HUziEP6H/4KHFLiUONOHPfCSv1hTPm3i84RCGPdM
+| xUm3AvFpN6u3eImv66+WDizN1h51AOi49KDHzOCAmWI0zlH49zRNOoRZWfI1b7EH
+| fg5DvoQrzXTpB9LwgvgajGWrLfoh8xnaR597qS/JXoZx1KZhYNVDwNiQoZvLybj+
+| /SfdH4e+mSqlo0YlZ9Qrx5n7ihDXEW/7boY0groQuXyp6WxuyXhSg/2qcJRBNrQV
+| A4HP/wXQGF9z1MUCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEANp2wezEy0cYmgofR
+| SbV5+Icb+E+W54K4EG/3pRR1J/agkSStGKZWdOAgt7Frlz/jAZyt7i66x52Dcqfk
+| z3rp8vxl2Yg3U0nVXSloxxVZmfjcqza44Kw1w5xLGUzt57HTieCvOphPIiPUly8v
+| Rw1IzD+mwlQ1DqaBi/w3c0UmVd/rdF/U0EajMFhV7K8yoflJ7IbRrJNSJSCn1n69
+| UW94HIKzM8e4FD4Xtx8e47YQTa75qcv0qy/XVfSnl0XnQQRq24zO4RtjjgavbwZG
+| a9JkTLPdmyUOdwuhX51rgUn+W2/hEdRxK0IXBGx48G7OWIIikSgPAH094RY50n2R
+| gzMV9w==
+|_-----END CERTIFICATE-----
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.93%E=4%D=9/30%OT=135%CT=1%CU=31781%PV=Y%DS=2%DC=T%G=Y%TM=6337A3
+OS:C3%P=x86_64-unknown-linux-gnu)SEQ(SP=105%GCD=1%ISR=10A%TI=I%CI=I%II=I%SS
+OS:=S%TS=U)OPS(O1=M539NW8NNS%O2=M539NW8NNS%O3=M539NW8%O4=M539NW8NNS%O5=M539
+OS:NW8NNS%O6=M539NNS)WIN(W1=FFFF%W2=FFFF%W3=FFFF%W4=FFFF%W5=FFFF%W6=FF70)EC
+OS:N(R=Y%DF=Y%T=80%W=FFFF%O=M539NW8NNS%CC=Y%Q=)T1(R=Y%DF=Y%T=80%S=O%A=S+%F=
+OS:AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=80%W=0%S=A%A=O%F=R%O=%RD=0%Q=)T5(
+OS:R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=80%W=0%S=A%A=O%
+OS:F=R%O=%RD=0%Q=)T7(R=N)U1(R=Y%DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G
+OS:%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=80%CD=Z)
+
+Network Distance: 2 hops
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 1h45m00s, deviation: 3h30m02s, median: 0s
+| smb-os-discovery: 
+|   OS: Windows Server 2019 Standard 17763 (Windows Server 2019 Standard 6.3)
+|   Computer name: Archetype
+|   NetBIOS computer name: ARCHETYPE\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2022-09-30T19:19:36-07:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-time: 
+|   date: 2022-10-01T02:19:35
+|_  start_date: N/A
+| smb2-security-mode: 
+|   311: 
+|_    Message signing enabled but not required
+
+TRACEROUTE (using port 8888/tcp)
+HOP RTT       ADDRESS
+1   271.41 ms 10.10.14.1
+2   271.47 ms 10.129.190.66
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Sep 30 19:19:47 2022 -- 1 IP address (1 host up) scanned in 58.78 seconds
